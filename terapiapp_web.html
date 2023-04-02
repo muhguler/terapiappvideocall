@@ -1,0 +1,21 @@
+<html>
+<body>
+    <div id = "root">
+     
+    </div>
+
+</body>
+<script src="https://resource.zegocloud.com/prebuilt/crypto-js.js"></script>
+<script src="https://resource.zegocloud.com/prebuilt/prebuiltToken.js"></script>
+<script src="https://zegocloud.github.io/zegocloud_prebuilt_webrtc/ZegoPrebuilt/index.umd.js"></script>
+<script>
+
+const TOKEN = generatePrebuiltToken(475035451,"7f43ae7eb45a10dd8794e5199526db93df3994c9b2d617df8f75c1b9b2ea06ba",'room2','UserID-' + Math.random(),'jack'+ Math.random());
+
+const zp = ZegoUIKitPrebuilt.create(TOKEN);
+zp.joinRoom({
+    container : document.querySelector("#root"),
+});
+</script>
+
+</html>
